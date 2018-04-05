@@ -23,11 +23,11 @@ function getLyrics(){
         jsonpCallback: 'jsonp_callback',
         contentType: 'application/json',
         success: function(data) {
-            // logging the response data
+            // This islogging the response data
             console.log(data); 
-            // logging the response lyrics
+            //  This is logging the response lyrics
             console.log(data.message.body.lyrics.lyrics_body);
-            // a line to seperate the lyrics from the lyrics variable
+            //This is a line to seperate the lyrics from the lyrics variable
             console.log("____________________________________");
             // adding the lyrics data to a variable and consoling it
             var lyrics = data.message.body.lyrics.lyrics_body;
